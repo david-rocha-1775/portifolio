@@ -18,5 +18,5 @@ Esta pasta contém projetos desenvolvidos para praticar e aplicar os conceitos f
 
 ## 📌 Observação
 
-Os projetos estão organizados por tema, como estruturas de página, responsividade, entre outros.  
+Os projetos estão organizados por pastas, como estruturas de página, responsividade, entre outros.  
 Novos projetos e desafios serão adicionados à medida que as habilidades de desenvolvimento web se expandem.
