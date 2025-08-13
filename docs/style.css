@@ -42,12 +42,7 @@ body {
   width: 100%;
 }
 
-
 .botao {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px; 
   background-color: white;
   color: #000;
   padding: 20px 30px;
@@ -57,6 +52,11 @@ body {
   font-weight: bold;
   font-size: 18px;
   min-height: 60px;
+  display: inline-flex; /* Garante que o conteúdo fique em linha */
+  align-items: center; /* Alinha o emoji e o texto verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  gap: 8px; /* Espaçamento entre o emoji e o texto */
+  white-space: nowrap; /* Impede quebra de linha entre emoji e texto */
   box-shadow: 5px 5px 0px #222;
   transition: all 0.2s ease-in-out;
 }
