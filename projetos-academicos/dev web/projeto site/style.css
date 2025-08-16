@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-image: url(img3.png);
     background-size: cover;
-    background-position: center;
+    background-position: center -150px;
 }
 .container{
     width: 100%;
@@ -17,7 +17,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 500px;
 } 
 .login-form h1{
     margin-bottom: 10px;
