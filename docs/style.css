@@ -80,3 +80,8 @@ body {
   font-size: 20px;
   padding: 12px 40px;
 }
+
+.quem-sou-texto {
+  white-space: normal;
+  text-align: justify;
+}
