@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>cadastro</h1>
+            <input type="text"placeholder="nome completo" required>
+            <input type="text"placeholder="telefone" required>
+            <input type="text"placeholder="endereço" required>
+            <input type="text"placeholder="Email" required>
+            <input type="text"placeholder="Senha" required>
+            <input type="text"placeholder="confirmar Senha" required>
+            
+            <br>
+
+            <h2>Nome do Pet</h2>
+            <input type="text"placeholder="Digite o Nome do Pet"><br>
+
+            <label> Sexo do pet: </label>
+            <label for="radio"><input type="radio" name="Sexo" id="Macho" value="Macho">Macho</input></label>
+            <label for="radio"><input type="radio" name="Sexo" id="Femea" value="Femea">Femea</input></label>
+
+            <br>
+
+            <label> Porte: </label>
+            <label for="radio"><input type="radio"name="Porte" id="Pequeno" value="Pequeno">Pequeno</input></label>
+            <label for="radio"><input type="radio"name="Porte" id="Medio" value="Medio">Medio</input></label>
+            <label for="radio"><input type="radio"name="Porte" id="Grande" value="Grande">Grande</input></label>
+
+            <br>
+
+            <h2>Raça</h2>
+            <select name="Raça" id="Raça">
+                <option value="">Escolha uma Raça</option>
+                <option value="Pincher">Pincher</option>
+                <option value="Labrador">Labrador</option>
+                <option value="Golden Retriver">Golden Retriver</option>
+                <option value="Pastor Alemao">Pastor Alemao</option>
+            </select>
+
+            <br>
+            
+            <h2>Foto do Pet</h2>
+            <label for="foto">Foto do Pet</label>
+            <input type="file" name="Foto_pet" id="Foto_pet" accept="image/*">
+            <br><br>
+            <button type="submit">cadastrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
