@@ -1,7 +1,7 @@
 # Portfólio de David Rocha
 
 Bem-vindo(a) ao meu portfólio de projetos!  
-Sou estudante de Engenharia de Software no CEUB, com foco em desenvolvimento de software, versionamento de código e boas práticas de programação.
+Sou estudante de Engenharia de Software, com foco em desenvolvimento de software, versionamento de código e boas práticas de programação.
 
 Este repositório foi criado como parte do desafio do Bootcamp I para documentar meus projetos acadêmicos e pessoais, com versionamento utilizando Git e GitHub.
 
