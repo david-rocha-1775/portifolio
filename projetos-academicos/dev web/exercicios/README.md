@@ -1,1 +1,1 @@
-
+exercicios do curso tecnico
