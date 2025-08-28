@@ -10,4 +10,6 @@ int main(){
     scanf("%f",&n3);
     media = ((n1*1) + (n2*2) + (n3*3))/3;
     printf("media com peso 1,2,3 respectivamente =%.2f",media);
+    return 0;
 }
+
