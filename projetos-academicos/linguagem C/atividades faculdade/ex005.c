@@ -20,5 +20,6 @@ int main(){
         C= (F - 32) * 5 / 9;
         printf("%.2f graus farenheit em celcius = %.2f\n",F,C);
     }
-    
+    return 0;
 }
+
