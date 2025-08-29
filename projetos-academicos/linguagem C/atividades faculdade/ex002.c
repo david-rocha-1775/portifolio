@@ -8,5 +8,5 @@ int main(){
     scanf("%d",&n2);
     soma= n1+n2;
     printf("soma = %d",soma);
-    
+    return 0;
 }
