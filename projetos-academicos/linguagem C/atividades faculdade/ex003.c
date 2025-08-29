@@ -7,5 +7,5 @@ int main(){
     scanf("%f",&r1);
     area_c= pi * (r1*r1);
     printf("area do circulo = %.2f", area_c);
-
+    return 0;
 }
