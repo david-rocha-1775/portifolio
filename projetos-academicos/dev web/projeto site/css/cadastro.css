@@ -26,13 +26,13 @@ body{
 .cadastro-form h1{
     margin-top: 25px;
     margin-bottom: 15px;
-    color: #555;
+    color: #000000;
     font-size: 40px;
 }
 .cadastro-form h2 {
     margin-top: 25px;
     margin-bottom: 15px;
-    color: #555;
+    color: #000000;
     font-size: 40px;
   }
 .cadastro-form input[type="text"],
@@ -60,7 +60,7 @@ body{
     padding: 5px;
     text-align: center;
     margin-bottom: 5px;
-    color: rgb(3, 3, 3);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 20px;
   }
