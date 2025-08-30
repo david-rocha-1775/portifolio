@@ -6,53 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
     <form>
-        <fieldset>
-            <h1>cadastro</h1>
-            <input type="text"placeholder="Digite seu nome completo" required>
-            <input type="tel"placeholder="telefone" required>
-            <input type="text"placeholder="endereço" required>
-            <input type="email"placeholder="Email" required>
-            <input type="password"placeholder="Senha" required>
-            <input type="password"placeholder="Confirmar Senha" required>
-            
-            <br>
-
-            <h2>Nome do Pet</h2>
-            <input type="text"placeholder="Digite o Nome do Pet" required><br>
-
-            <label> Sexo do pet: </label>
-            <label for="radio"><input type="radio" name="Sexo" id="Macho" value="Macho" required>Macho</input></label>
-            <label for="radio"><input type="radio" name="Sexo" id="Femea" value="Femea" required>Femea</input></label>
-
-            <br>
-
-            <label> Porte: </label>
-            <label for="radio"><input type="radio"name="Porte" id="Pequeno" value="Pequeno" required>Pequeno</input></label>
-            <label for="radio"><input type="radio"name="Porte" id="Medio" value="Medio" required>Medio</input></label>
-            <label for="radio"><input type="radio"name="Porte" id="Grande" value="Grande" required>Grande</input></label>
-
-            <br>
-
-            <h2>Raça</h2>
-            <select name="Raça" id="Raça" required>
-                <option value="">Escolha uma Raça</option>
-                <option value="Pincher" required>Pincher</option>
-                <option value="Labrador" required>Labrador</option>
-                <option value="Golden Retriver" required>Golden Retriver</option>
-                <option value="Pastor Alemao" required>Pastor Alemao</option>
-            </select>
-
-            <br>
-            
-            <h2>Foto do Pet</h2>
-            <label for="foto">Foto do Pet</label>
-            <input type="file" name="Foto_pet" id="Foto_pet" accept="image/*" required>
-            <br><br>
-            <button type="submit">cadastrar</button>
-        </fieldset>
+        <div class="container">
+            <div class="cadastro-form">
+                <fieldset>
+                    <h1>cadastro</h1>
+                    <input type="text"placeholder="Digite seu nome completo" required>
+                    <input type="tel"placeholder="(00) 0000-0000" required>
+                    <input type="text"placeholder="endereço" required>
+                    <input type="email"placeholder="Email" required>
+                    <input type="password"placeholder="Senha" required>
+                    <input type="password"placeholder="Confirmar Senha" required>
+                
+                    <br>
+                    <h2>Pet</h2>
+                    <input type="text"placeholder="Digite o Nome do Pet" required><br>
+                    <label> Sexo do pet: </label>
+                    <label for="radio"><input type="radio" name="Sexo" id="Macho" value="Macho" required>Macho</input></label>
+                    <label for="radio"><input type="radio" name="Sexo" id="Femea" value="Femea" required>Femea</input></label>
+                    <br>
+                    <label> Porte: </label>
+                    <label for="radio"><input type="radio"name="Porte" id="Pequeno" value="Pequeno" required>Pequeno</input></label>
+                    <label for="radio"><input type="radio"name="Porte" id="Medio" value="Medio" required>Medio</input></label>
+                    <label for="radio"><input type="radio"name="Porte" id="Grande" value="Grande" required>Grande</input></label>
+                    <br>
+                    <br>
+                    <select name="Raça" id="Raça" required>
+                        <option value="" disabled selected hidden>Escolha uma Raça</option>
+                        <option value="Pincher" required>Pincher</option>
+                        <option value="Labrador" required>Labrador</option>
+                        <option value="Golden Retriver" required>Golden Retriver</option>
+                        <option value="Pastor Alemao" required>Pastor Alemao</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="foto">Foto do Pet</label>
+                    <input type="file" name="Foto_pet" id="Foto_pet" accept="image/*" required>
+                    <br><br>
+                    <button type="submit">cadastrar</button>
+                    <button type="reset">Limpar</button>
+                    <button type="button" onclick="">Adicionar Pet</button>
+                </fieldset>
+            </div>
+        </div>
     </form>
 </body>
 </html>
