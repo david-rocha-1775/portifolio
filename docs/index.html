@@ -1,40 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Portfólio de David Rocha</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rocha - Portifólio</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2/S5/r3A4z6/aY9Wp1j5mE89V+7+1mS1k52rA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .light {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .dark .card {
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .light .card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Estilos específicos para o modo escuro */
+        .dark .text-gray-600 {
+            color: #b0b0b0;
+        }
+        .dark .text-gray-800 {
+            color: #e0e0e0;
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <div class="cabecalho">
-      <h1>
-        <img src="./imagens/perfil.png" alt="Ícone" style="width: 80px; vertical-align: middle; margin-right: 8px;">
-        David Rocha
-      </h1>
-      <p>Estudante de engenharia de software</p>
+
+<body class="light">
+    <!-- Botão de alternar tema -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="themeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-all duration-300">
+            <i class="fas fa-moon dark:text-yellow-400 text-gray-800"></i>
+        </button>
     </div>
 
-    <div class="botoes">
-  <a href="#" class="botao destaque">📁 Projetos ➜</a>
-  <a href="https://github.com/david-rocha-1775/portifolio/tree/main/projetos-academicos" class="botao">projetos acadêmicos 🎓</a>
-  <a href="https://github.com/david-rocha-1775/portifolio/tree/main/projetos-pessoais" class="botao">projetos pessoais 🛠️</a>
+    <!-- Seção Sobre Mim -->
+    <header id="about" class="container mx-auto px-4 py-16 text-center">
+        <div class="flex flex-col items-center">
+            <img src="./img/perfil.png" alt="Foto de Perfil" class="w-36 h-36 rounded-full mb-4 object-cover border-4 border-indigo-500">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-2">David Rocha</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400">Desenvolvedor Full-Stack em Formação.</p>
+            <p class="mt-4 max-w-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                Sou estudante de Engenharia de Software. motivado pelo meu interesse constante em tecnologia e desenvolvimento de soluções. Escolhi esse curso com o objetivo de me aprofundar na área e construir uma formação sólida e de qualidade. Atualmente, também estou cursando um técnico em Informática com foco em software. No tempo livre, gosto de jogar bola e praticar musculação.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105">Ver Projetos</a>
+                <a href="#contact" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition-transform transform hover:scale-105">Entrar em Contato</a>
+            </div>
+        </div>
+    </header>
 
-  <a href="#" class="botao destaque">🔗 Contato ➜</a>
-  <a href="https://www.linkedin.com/in/david-rocha-de-oliveira/" class="botao">
-    <img src="./imagens/linkedin_logo.png" alt="LinkedIn"> LinkedIn
-  </a>
-  <a href="https://github.com/david-rocha-1775" class="botao">
-    <img src="./imagens/github.png" alt="GitHub"> GitHub
-  </a>
-  <details class="botao grande" style="margin-top: 12px;">
-    <summary>Quem eu sou 🙋🏻</summary>
-    <div class="quem-sou-texto" style="padding: 30px; text-align: center;">
-      Sou estudante de Engenharia de Software. motivado pelo meu interesse constante em tecnologia e desenvolvimento de soluções. Escolhi esse curso com o objetivo de me aprofundar na área e construir uma formação sólida e de qualidade. No futuro, pretendo atuar como gestor de projetos ou equipes de tecnologia, pois me identifico com essa função por envolver múltiplas áreas e dinâmicas de liderança. Atualmente, também estou cursando um técnico em Informática com foco em software. No tempo livre, gosto de jogar bola e praticar musculação.
-    </div>
-  </details>
-</div>
+    <main class="container mx-auto px-4 py-8">
 
-  </div>
+        <!-- Seção de Habilidades -->
+        <section id="skills" class="mb-16 relative">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Habilidades</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="HTML5">HTML5</span>
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="CSS3">CSS3</span>
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="C">C</span>
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="Git">Git</span>
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="SQL">SQL</span>
+                <span class="skill-tag bg-indigo-500 text-white text-sm font-medium px-4 py-2 rounded-full cursor-pointer transition-transform transform hover:scale-105 duration-300" data-skill="Python">Python</span>
+            </div>
+        </section>
+
+        <!-- Modal de Habilidades -->
+        <div id="skillModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 dark:bg-opacity-90 z-50 hidden items-center justify-center transition-opacity duration-300 opacity-0">
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg w-11/12 mx-auto card relative">
+                <button id="closeModal" class="absolute top-4 right-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+                <h3 id="modalTitle" class="text-3xl font-bold text-gray-800 dark:text-white mb-4"></h3>
+                <p id="modalDescription" class="text-gray-600 dark:text-gray-400 leading-relaxed"></p>
+            </div>
+        </div>
+
+        <!-- Seção de Projetos -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Projetos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Projeto Pessoais -->
+                <div class="card p-6 rounded-lg transition-transform transform hover:scale-105 duration-300">
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Projetos+Pessoais" alt="Imagem do Projeto E-commerce App" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Projetos Pessoais</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Uma coleção de projetos desenvolvidos por iniciativa própria para aprimorar minhas habilidades, explorar novas tecnologias e criar soluções criativas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Front-end</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Back-end</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Full-Stack</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/david-rocha-1775/portifolio/tree/main/projetos-pessoais" target="_blank" class="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-500 font-semibold"><i class="fab fa-github mr-1"></i>Ver no GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projetos Acadêmicos -->
+                <div class="card p-6 rounded-lg transition-transform transform hover:scale-105 duration-300">
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Projetos+Academicos" alt="Imagem do Projeto App de Tarefas" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Projetos Acadêmicos</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Projetos desenvolvidos em sala de aula para aplicar conceitos de Engenharia de Software e aprofundar o conhecimento em metodologias ágeis e arquitetura de sistemas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Modelagem de sistemas</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Algoritmos</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-1 rounded-full dark:bg-gray-700 dark:text-gray-200">Banco de Dados</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/david-rocha-1775/portifolio/tree/main/projetos-academicos" target="_blank" class="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-500 font-semibold"><i class="fab fa-github mr-1"></i>Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Experiência e Formação -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Experiência & Formação</h2>
+            <div class="flex flex-col items-center">
+                <div class="card p-6 rounded-lg max-w-2xl w-full">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-1">Graduação em Engenharia de Software</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-1">Universidade de Brasilia (unb) | 2025 - Presente</p>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                        <li>Estudo de metodologias ágeis, arquitetura de software e design de sistemas.</li>
+                        <li>Desenvolvimento de projetos acadêmicos com foco na aplicação prática de teorias de engenharia de software.</li>
+                        <li>Aprofundamento em estruturas de dados e algoritmos para otimização de código.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg max-w-2xl w-full mt-4">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-1">Curso Técnico em Informática</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-1">Escola Técnica de Ceilâdia (ETC) | 2025 - Presente</p>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                        <li>Aprendizagem de fundamentos de programação, lógica e banco de dados.</li>
+                        <li>Desenvolvimento de aplicações front-end e back-end em projetos guiados.</li>
+                        <li>Colaboração em equipe para resolver problemas técnicos e entregar soluções.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="mb-16 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Vamos Conectar?</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-8 max-w-xl mx-auto">Estou sempre aberto a novas oportunidades e desafios. Sinta-se à vontade para entrar em contato.</p>
+            <div class="flex justify-center gap-6 text-2xl">
+                <a href="mailto:davrocha1006@gmail.com" class="hover:text-indigo-600 transition-colors duration-300" aria-label="Enviar um e-mail para David Rocha"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/david-rocha-de-oliveira/" target="_blank" class="hover:text-indigo-600 transition-colors duration-300" aria-label="Ver o perfil do LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/david-rocha-1775" target="_blank" class="hover:text-indigo-600 transition-colors duration-300" aria-label="Ver o perfil do GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-600 dark:text-gray-400">
+        <p>&copy; 2025 David Rocha.</p>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const skillTags = document.querySelectorAll('.skill-tag');
+        const skillModal = document.getElementById('skillModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+
+        const skillData = {
+            "HTML5": {
+                description: "Criação de estruturas de páginas web semânticas e acessíveis. Aprendizado com cursos e no curso técnico.",
+                source: "Curso Técnico, Cursos Online"
+            },
+            "CSS3": {
+                description: "Estilização de páginas web e criação de designs responsivos. Conhecimento aprofundado com a prática de projetos e estudos autodidatas.",
+                source: "Curso Técnico, Cursos Online"
+            },
+            "C": {
+                description: "Conhecimento em programação de baixo nível e gerenciamento de memória, crucial para o desenvolvimento de sistemas e algoritmos eficientes. Base adquirida na graduação.",
+                source: "Graduação"
+            },
+            "Git": {
+                description: "Controle de versão colaborativo. Essencial para o desenvolvimento em equipe. Aprendizado e uso diário em todos os projetos de código.",
+                source: "Projetos Pessoais e Acadêmicos"
+            },
+            "SQL": {
+                description: "Conhecimento em bancos de dados relacionais e na linguagem SQL para gerenciamento de dados. Base adquirida na faculdade e em cursos específicos.",
+                source: "Graduação, Curso Técnico"
+            },
+            "Python": {
+                description: "Habilidade na linguagem para automação de tarefas, análise de dados e desenvolvimento back-end. Conhecimento adquirido em projetos e em cursos online.",
+                source: "Cursos Online, Projetos Acadêmicos"
+            },
+        };
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light')) {
+                body.classList.remove('light');
+                body.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-400"></i>';
+            } else {
+                body.classList.remove('dark');
+                body.classList.add('light');
+                localStorage.setItem('theme', 'light');
+                themeToggle.innerHTML = '<i class="fas fa-moon text-gray-800"></i>';
+            }
+        });
+
+        window.addEventListener('load', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            body.classList.add(savedTheme);
+            if (savedTheme === 'dark') {
+                themeToggle.innerHTML = '<i class="fas fa-sun text-yellow-400"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon text-gray-800"></i>';
+            }
+        });
+
+        skillTags.forEach(tag => {
+            tag.addEventListener('click', (e) => {
+                const skillName = e.target.getAttribute('data-skill');
+                const skillInfo = skillData[skillName];
+
+                if (skillInfo) {
+                    modalTitle.innerText = skillName;
+                    modalDescription.innerText = `${skillInfo.description} (${skillInfo.source})`;
+                    
+                    skillModal.classList.remove('hidden');
+                    setTimeout(() => {
+                        skillModal.classList.add('opacity-100');
+                        skillModal.classList.add('flex');
+                    }, 10);
+                }
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            skillModal.classList.remove('opacity-100');
+            setTimeout(() => {
+                skillModal.classList.add('hidden');
+                skillModal.classList.remove('flex');
+            }, 300);
+        });
+
+        skillModal.addEventListener('click', (e) => {
+            if (e.target === skillModal) {
+                skillModal.classList.remove('opacity-100');
+                setTimeout(() => {
+                    skillModal.classList.add('hidden');
+                    skillModal.classList.remove('flex');
+                }, 300);
+            }
+        });
+    </script>
 </body>
+
 </html>
