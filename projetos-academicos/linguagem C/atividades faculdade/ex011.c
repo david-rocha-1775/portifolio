@@ -5,6 +5,6 @@ int main() {
     float economia_mensal;
     scanf("%d %d %d", &custo_total, &guardado,&meses);
     economia_mensal = (custo_total - guardado) / meses;
-    printf("Voce precisa economizar R$%.2f por mes.\n", economia_mensal);
+    printf("Voce precisa economizar R$%.2f por mes\n", economia_mensal);
     return 0;
 }
