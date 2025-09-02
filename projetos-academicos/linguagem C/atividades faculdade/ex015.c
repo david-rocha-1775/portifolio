@@ -3,7 +3,7 @@
 #include <math.h>
 void powAPC(int x, int y){
     float resultado = pow(x,y);
-    printf("%.2f\n", resultado);
+    printf("%.1f\n", resultado);
 }
 int main(){
     int x, y;
