@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 void powAPC(int x, int y){
-    float resultado = pow(x,y);
+    double resultado = pow(x,y);
     printf("%.1f\n", resultado);
 }
 int main(){
