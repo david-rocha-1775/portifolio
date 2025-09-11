@@ -26,12 +26,12 @@ body{
 .login-form input[type="text"],
 .login-form input[type="password"]{
 
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        width: 200px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
 }
 .login-form button{
     padding: 10px 20px;
