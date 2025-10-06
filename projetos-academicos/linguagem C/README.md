@@ -1,4 +1,4 @@
-# 💻 Projetos em Linguagem C – Curso Técnico
+# 💻 Projetos em Linguagem C
 
 Esta pasta reúne projetos e exercícios desenvolvidos em Linguagem C durante o curso técnico em informática e minha graduação em engenharia de software. 
 As atividades têm como objetivo aplicar os fundamentos da programação estruturada por meio de práticas voltadas à lógica computacional e desenvolvimento de algoritmos.
