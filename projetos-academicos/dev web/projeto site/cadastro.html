@@ -9,34 +9,34 @@
     <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
-    <form>
+    <form method="post" action="cadastrar.php" enctype="multipart/form-data">
         <div class="container">
             <div class="cadastro-form">
                 <fieldset id="form-fieldset">
                     <h1>Cadastro</h1>
-                    <input type="text" placeholder="Digite seu nome completo" required>
-                    <input type="tel" placeholder="(00) 0000-0000" required>
-                    <input type="text" placeholder="Endereço" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Senha" required>
-                    <input type="password" placeholder="Confirmar Senha" required>
+                    <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Digite seu nome completo" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" required>
+                    <input type="text" id="edereco" name="edereco" placeholder="Endereço" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirmar Senha" required>
                     
                     <br>
 
                     <div id="pets-container">
                         <div class="pet-section">
                             <h2>Pet</h2>
-                            <input type="text" placeholder="Digite o Nome do Pet" required><br>
+                            <input type="text" id="nome_pet" name="nome_pet" placeholder="Digite o Nome do Pet" required><br>
                             <label> Sexo do pet: </label>
-                            <label><input type="radio" name="Sexo1" value="Macho" required>Macho</label>
-                            <label><input type="radio" name="Sexo1" value="Femea" required>Femea</label>
+                            <label><input type="radio" name="sexo" id="sexo" value="Macho" required>Macho</label>
+                            <label><input type="radio" name="sexo" id="sexo" value="Femea" required>Femea</label>
                             <br>
                             <label> Porte: </label>
-                            <label><input type="radio" name="Porte1" value="Pequeno" required>Pequeno</label>
-                            <label><input type="radio" name="Porte1" value="Medio" required>Medio</label>
-                            <label><input type="radio" name="Porte1" value="Grande" required>Grande</label>
+                            <label><input type="radio" name="porte" id="porte" value="Pequeno" required>Pequeno</label>
+                            <label><input type="radio" name="porte" id="porte" value="Medio" required>Medio</label>
+                            <label><input type="radio" name="porte" id="porte" value="Grande" required>Grande</label>
                             <br><br>
-                            <select name="Raca1" required>
+                            <select name="raca" id="raca" required>
                                 <option value="" disabled selected hidden>Escolha uma Raça</option>
                                 <option value="Pincher">Pincher</option>
                                 <option value="Labrador">Labrador</option>
@@ -45,7 +45,7 @@
                             </select>
                             <br><br>
                             <label for="foto">Foto do Pet</label>
-                            <input type="file" name="Foto_pet1" accept="image/*" required>
+                            <input type="file" name="pet_fotos" id="pet_fotos" accept="image/*" required>
                         </div>
                     </div>
                     
